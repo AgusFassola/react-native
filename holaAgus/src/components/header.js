@@ -7,10 +7,10 @@ export default class Header extends Component {
         Alert.alert('Hola en botón')
       }
     return (
-        <ImageBackground source={require('./assets/rectangulo.webp')} style={styles.headerFondo}>
+        <ImageBackground source={require('../../assets/rectangulo.webp')} style={styles.headerFondo}>
                     <View style={styles.header}>
                       <View style={styles.headerLeft}>
-                        <Image source={require('./assets/logo.png')} style={styles.logo}></Image>
+                        <Image source={require('../../assets/logo.png')} style={styles.logo}></Image>
                       </View>
                       <View style={styles.headerRight}>
                         <Button title='Login' onPress={saludo} 

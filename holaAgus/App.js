@@ -34,6 +34,8 @@ const styles = StyleSheet.create({
   text: {
     color: '#000'
   },
-  
+  body:{
+    flex:1
+  }
 
 });
