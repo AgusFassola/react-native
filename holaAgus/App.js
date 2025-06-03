@@ -3,10 +3,24 @@ import { StyleSheet, Text, View, ImageBackground, ScrollView } from 'react-nativ
 import Header from './src/components/header';
 import Body from './src/components/body';
 import Footer from './src/components/footer';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
+import Login from './src/components/Login';
 
+const LoginNavigator = createStackNavigator({
+    Login: {
+      screen: Login,
+      navigationOptions: {
+        title: 'BARBERGO'
+      }
+    }
+  },{headerLayoutPreset :'center'})
 
-export default function App() {
+  export default createAppContainer(LoginNavigator)
+
+/* export default function App() {
   
+  
+
   return (
 
     <ImageBackground source={require('./assets/fondo.png')} style={styles.body}>
@@ -39,3 +53,4 @@ const styles = StyleSheet.create({
   }
 
 });
+ */
